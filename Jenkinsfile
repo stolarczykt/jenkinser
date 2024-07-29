@@ -4,7 +4,9 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo '==> Go go go'
+                echo '==> Sleep 120 seconds'
+                sleep 120
+                echo '==> Woke up after 120 seconds'
             }
         }
     }
